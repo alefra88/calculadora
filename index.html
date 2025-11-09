@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<link rel="stylesheet" href="styles.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Calculadora</title>
+</head>
+<body>
+<div class="calculadora">
+    <input type="text" id="pantalla" class="pantalla" readonly>
+    <div class="botones">
+        <button onclick="limpiar()" class="limpiar">C</button>
+        <button onclick="agregarNumero('7')">7</button>
+        <button onclick="agregarNumero('8')">8</button>
+        <button onclick="agregarNumero('9')">9</button>
+        <button onclick="seleccionarOperacion('/')" class="operador">÷</button>
+        <button onclick="agregarNumero('4')">4</button>
+        <button onclick="agregarNumero('5')">5</button>
+        <button onclick="agregarNumero('6')">6</button>
+        <button onclick="seleccionarOperacion('*')" class="operador">×</button>
+        <button onclick="agregarNumero('1')">1</button>
+        <button onclick="agregarNumero('2')">2</button>
+        <button onclick="agregarNumero('3')">3</button>
+        <button onclick="seleccionarOperacion('-')" class="operador">−</button>
+        <button onclick="agregarNumero('0')" class="doble">0</button>
+        <button onclick="agregarNumero('.')">.</button>
+        <button onclick="seleccionarOperacion('+')" class="operador">+</button>
+        <button onclick="seleccionarOperacion('%')" class="operador">%</button>
+        <button onclick="calcularResultado()" class="operador doble">=</button>
+    </div>
+</div>
+<script src="scripts.js"></script>
+</body>
+</html>
